@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: rgb(192, 189, 189);
+  color: white;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(30, 155, 197);
+  padding: 2px 15px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.quantity-container button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.total-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: rgb(192, 189, 189);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(192, 189, 189);
+  color: white;
+  flex-wrap: wrap;
+}
+
+#products-container {
+  width: 360px;
+  height: fit-content;
+  min-height: 285px;
+  border: 5px solid rgb(192, 189, 189);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#cart-container {
+  width: 200px;
+  min-height: 285px;
+  height: fit-content;
+  border: 5px solid rgb(192, 189, 189);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#cart-items-container {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 423px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: fit-content;
+    padding: 10px;
+  }
+}
